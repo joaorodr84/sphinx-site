@@ -1,0 +1,290 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Sphinx — Privacy policy</title>
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --bg:#eef0f1;
+    --surface:#ffffff;
+    --surface-2:#e4e7e9;
+    --fg:#1f2937;
+    --muted:#565f6b;
+    --rule:#d7dbde;
+    --accent:#2f6b4f;
+    --accent-ink:#ffffff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1f2937;
+      --surface:#242e3b;
+      --surface-2:#2c3647;
+      --fg:#f3f4f6;
+      --muted:#a8b1bd;
+      --rule:#3a4556;
+      --accent:#5f9b78;
+      --accent-ink:#1f2937;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1f2937;
+    --surface:#242e3b;
+    --surface-2:#2c3647;
+    --fg:#f3f4f6;
+    --muted:#a8b1bd;
+    --rule:#3a4556;
+    --accent:#5f9b78;
+    --accent-ink:#1f2937;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 20px 64px}
+  a{color:var(--accent)}
+  h1{font-family:"Sora",system-ui,sans-serif;font-size:1.9rem;margin:0 0 4px}
+  .updated{color:var(--muted);font-size:0.9rem;margin:0 0 32px}
+  h2{font-family:"Sora",system-ui,sans-serif;font-size:1.15rem;margin:32px 0 10px}
+  p,li{color:var(--fg)}
+  ul{padding-left:1.2rem}
+  li+li{margin-top:6px}
+
+  nav.site-nav{background:var(--surface);border-bottom:1px solid var(--rule)}
+  .site-nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+  .site-nav-brand{display:flex;align-items:center;gap:8px;font-family:"Sora",system-ui,sans-serif;font-weight:700;color:var(--fg);text-decoration:none;font-size:1rem}
+  .site-nav-icon{width:24px;height:24px;flex-shrink:0;border-radius:6px}
+
+  .theme-toggle{
+    position:fixed;
+    top:14px;
+    right:14px;
+    z-index:10;
+    display:flex;
+    gap:2px;
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:999px;
+    padding:3px;
+  }
+  .theme-toggle button{
+    width:32px;height:32px;
+    border:none;
+    border-radius:999px;
+    background:transparent;
+    color:var(--muted);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+  }
+  .theme-toggle button.active{
+    background:var(--surface-2);
+    color:var(--fg);
+  }
+
+  footer{padding-block:40px 48px;background:var(--surface);border-top:1px solid var(--rule)}
+  footer .wrap{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    color:var(--muted);
+    font-size:0.86rem;
+  }
+  .footer-icon{width:40px;height:40px;flex-shrink:0;border-radius:8px}
+  .footer-links{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+  footer .brand{font-family:"Sora",system-ui,sans-serif;color:var(--fg);font-weight:600;margin-right:4px;text-decoration:none}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--fg)}
+</style>
+</head><body>
+<script>
+// Restore the saved theme choice before the rest of the page renders, so a
+// returning visitor doesn't see a flash of the wrong theme. The three
+// states mirror the app's own Settings: "light"/"dark" force that theme
+// regardless of the device; no attribute (or "system") follows the device,
+// same as the CSS below already does via prefers-color-scheme.
+(function () {
+  try {
+    var saved = localStorage.getItem('sphinx-theme');
+    if (saved === 'light' || saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+  } catch (e) {}
+})();
+</script>
+
+<div class="theme-toggle" role="group" aria-label="Theme">
+  <button type="button" data-theme-choice="light" aria-label="Light" title="Light">
+    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+    </svg>
+  </button>
+  <button type="button" data-theme-choice="dark" aria-label="Dark" title="Dark">
+    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+    </svg>
+  </button>
+  <button type="button" data-theme-choice="system" aria-label="Follow the device" title="Follow the device">
+    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="12" rx="2" />
+      <path d="M8 20h8M12 16v4" />
+    </svg>
+  </button>
+</div>
+
+<nav class="site-nav">
+  <div class="wrap site-nav-inner">
+    <a class="site-nav-brand" href="index.html"><img class="site-nav-icon" src="favicon.png" alt="">Sphinx</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated: 2026-09-26</p>
+
+  <p>Sphinx is a party word-guessing game made by a single independent
+  developer (not a company). This policy explains what information the app
+  handles and why. If anything here is unclear, contact
+  <a href="mailto:joaorodr84@gmail.com">joaorodr84@gmail.com</a>.</p>
+
+  <h2>Summary</h2>
+  <p>Sphinx works entirely offline. There's no account to create, no login,
+  and no ads. Nothing you do in the game — the words you see, your score,
+  photos you take, how you hold your phone — is uploaded anywhere by Sphinx,
+  with one exception: if the app crashes or hits an error, a technical error
+  report may be sent to a crash-reporting service so the bug can be fixed.
+  That's covered in detail below.</p>
+
+  <h2>Information Sphinx handles</h2>
+  <p><strong>Score history.</strong> Sphinx keeps a local history of rounds
+  you've played (category, score, date) so you can look back at past games.
+  This is stored only on your device, using standard on-device app storage.
+  It is never sent anywhere. You can erase it at any time from the History
+  screen's "Clear history" button (which asks you to confirm before
+  deleting), and it's removed automatically if you uninstall the app.</p>
+  <p><strong>Camera (optional).</strong> After a round, Sphinx can offer to
+  let you take a photo of your group using your device's own camera app.
+  This is entirely optional — you can always tap "Not now." Sphinx shows the
+  photo back to you in a frame with a caption (the app name, the category,
+  your score and the date). If you tap Save, that framed picture is added to
+  your device's photo library, and only then does Sphinx ask for permission
+  to add photos to it — the narrowest kind of permission your device offers,
+  which lets Sphinx add a picture but never look at the ones you already
+  have. Sphinx does not upload the photo, share it, or keep a copy of its
+  own: the temporary files it works from are deleted when you're done with
+  the preview. Once saved, the picture is in your photo library like any
+  other and is yours to keep, share or delete from there. Sphinx only asks
+  for camera access, never microphone access, and only requests each
+  permission the first time you try to use the feature that needs it.</p>
+  <p><strong>Motion sensors (optional).</strong> Sphinx has two optional
+  settings — Forehead mode and Tilt gestures — that use your device's
+  built-in motion sensors (the same kind used for screen rotation) as an
+  alternative way to play, instead of tapping buttons. Both are off by
+  default and only turn on if you enable them in Settings. Motion readings
+  are processed in the moment, on your device, purely to detect a tilt
+  gesture — they are never recorded, stored, or sent anywhere.</p>
+  <p><strong>Settings and preferences.</strong> Choices you make in Settings
+  (theme, language, timer length, and so on) are saved locally on your
+  device so the app remembers them between sessions. They are never
+  transmitted anywhere.</p>
+  <p><strong>Crash and error reports.</strong> If Sphinx crashes or hits an
+  unexpected error, a technical error report (what went wrong, which part of
+  the app, and basic device/app information such as OS version and app
+  version) may be sent to Sentry, a third-party crash-reporting service, to
+  help identify and fix the bug. This is the only network transmission
+  Sphinx performs. These reports are diagnostic — they are not used for
+  advertising, profiling, or tracking you across apps, and Sphinx does not
+  intentionally include your score history, photos, or any text you've typed
+  in an error report. As with most crash-reporting tools, these reports may
+  include your device's IP address as an incidental part of the network
+  request; Sentry's own privacy policy
+  (<a href="https://sentry.io/privacy/">sentry.io/privacy</a>) governs how
+  it's handled once received. You can read more about Sentry at
+  <a href="https://sentry.io">sentry.io</a>.</p>
+
+  <h2>What Sphinx does not do</h2>
+  <ul>
+    <li>No account or login — Sphinx doesn't ask for your name, email, or
+    any other identifying information.</li>
+    <li>No advertising and no ad-tracking SDKs.</li>
+    <li>No analytics or usage-tracking SDKs beyond the crash reporting
+    described above.</li>
+    <li>No selling or sharing of your information with third parties,
+    beyond the crash-reporting service necessary to operate that one
+    feature.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>Sphinx includes an age-band setting (kids / teens / adult) that only
+  changes which words appear in a round — it does not collect anyone's age,
+  identity, or any other personal information, from children or adults.
+  Sphinx does not knowingly collect personal information from children.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>Score history, settings, and any locally cached data live entirely on
+  your device. You can clear score history at any time from the History
+  screen, or remove everything Sphinx has stored by uninstalling the app.
+  Sphinx has no server-side copy of anything to separately delete, because
+  nothing but crash/error reports (see above) is ever sent off your
+  device.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If what Sphinx collects or how it's handled changes, this document will
+  be updated and the "Last updated" date above will change accordingly.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or Sphinx's data handling:
+  <a href="mailto:joaorodr84@gmail.com">joaorodr84@gmail.com</a>.</p>
+</div>
+
+<footer>
+  <div class="wrap">
+    <img class="footer-icon" src="favicon.png" alt="">
+    <div class="footer-links">
+      <a class="brand" href="index.html">Sphinx</a>
+      <a href="privacy-policy.html">Privacy policy</a>
+      <a href="mailto:joaorodr84@gmail.com">joaorodr84@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function () {
+  var KEY = 'sphinx-theme';
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+
+  function currentChoice() {
+    var attr = document.documentElement.getAttribute('data-theme');
+    return attr === 'light' || attr === 'dark' ? attr : 'system';
+  }
+  function reflectActive() {
+    var choice = currentChoice();
+    buttons.forEach(function (btn) {
+      var isActive = btn.getAttribute('data-theme-choice') === choice;
+      btn.classList.toggle('active', isActive);
+    });
+  }
+  function apply(choice) {
+    if (choice === 'light' || choice === 'dark') {
+      document.documentElement.setAttribute('data-theme', choice);
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    reflectActive();
+    try { localStorage.setItem(KEY, choice); } catch (e) {}
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      apply(btn.getAttribute('data-theme-choice'));
+    });
+  });
+  reflectActive();
+})();
+</script>
+
+
+</body></html>
